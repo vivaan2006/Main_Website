@@ -355,7 +355,7 @@ body.light-theme{
     text-transform: uppercase;
     z-index: 10;
 }
-
+/* this is for the transparent featured article thing.*/
 .article-data-container{
     width: 100%;
     position: absolute;
@@ -380,7 +380,6 @@ body.light-theme{
 .article:hover .article-title{
     color: var(--hover-light-color);
 }
-
 
 .article-data{
     display: flex;
@@ -770,10 +769,10 @@ body.light-theme{
 }
 
 @media screen and (min-width: 768px) {
-
+/* changign the size of the featured articles*/
     .featured-content{
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 5rem repeat(4, 1fr);
+        grid-template-rows: 5rem repeat(2, 1fr);
     }
 
     .headline-banner{
@@ -782,7 +781,7 @@ body.light-theme{
     }
     
     .featured-article{
-        grid-column: 3/-1;
+        grid-column: 4/-1;
         grid-row: 2/4;
     }
 
@@ -793,6 +792,11 @@ body.light-theme{
     .featured-article-3{
         grid-column: 1/-1;
         grid-row: 4/6;
+    }
+    /* move that shit left*/
+    .featured-article-4{
+     grid-column: 1/-2;
+        grid-row: 4/7;
     }
 
     .older-posts .article{
